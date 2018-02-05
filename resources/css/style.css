@@ -255,9 +255,9 @@ footer {
 /* Tablet Version */
 
 @media only screen and (max-width: 1120px) {
-  html {
+  /* html {
     font-size: 14px;
-  }
+  } */
 
   .info-large {
     width: 50%;
