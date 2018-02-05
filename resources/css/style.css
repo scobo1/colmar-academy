@@ -23,8 +23,9 @@ html {
 }
 
 h2 {
-  font-size: 1.75rem;
+  font-size: 2.25rem;
   margin-bottom: 2rem;
+  font-weight: bold;
 }
 
 p {
@@ -68,7 +69,12 @@ ul {
 }
 
 li {
-  margin-left: 16px;
+  margin-left: 1.75rem;
+}
+
+li a {
+  color: black;
+  text-decoration: none;
 }
 
 .mobile {
@@ -108,13 +114,14 @@ h1 {
 
 .supporting {
   font-size: 1.75rem;
+  line-height: 1.2;
 }
 
 button {
-  padding: 8px;
+  padding: 0.5rem;
   width: 100%;
   height: 4rem;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   margin: 1.5rem 0rem;
 }
 
@@ -137,9 +144,10 @@ button {
 
 .info-small {
   display: flex;
+  flex-direction: row;
   align-items: center;
   margin-bottom: 1.5rem;
-}
+  }
 
 .info-img {
   width: 35%;
@@ -167,6 +175,7 @@ h3 {
 
 .read-more {
   color: green;
+  text-decoration: none;
 }
 
 
@@ -220,11 +229,13 @@ h4 {
 
 .thesis h2 {
   flex-basis: 100%;
+  text-align: center;
 }
 
 .info-large video {
   width: 100%;
   height: auto;
+  margin-bottom: 1rem;
 }
 
 
@@ -235,4 +246,121 @@ footer {
   justify-content: space-between;
   padding: 16px 24px;
   border-top: 1px solid lightgray;
+}
+
+.legal span:nth-child(1) {
+  margin-right: 1.5rem;
+}
+
+/* Tablet Version */
+
+@media only screen and (max-width: 1120px) {
+  html {
+    font-size: 14px;
+  }
+
+  .info-large {
+    width: 50%;
+  }
+
+.hero-content {
+  width: 50%;
+}
+
+  .info-side-section {
+    width: 50%;
+  }
+}
+
+/* Mobile version */
+
+@media only screen and (max-width: 650px) {
+  html {
+    font-size: 16px;
+  }
+
+  .mobile {
+    display: flex;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  nav {
+    padding-right: 0rem;
+    background-color: yellow;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .banner.section {
+    flex-direction: column;
+    padding: 0 0 2rem 0;
+  }
+
+  .info-large {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .hero-content {
+    margin: 0 2rem;
+    width: 90%;
+  }
+
+  .info-side-section {
+    width: 100%;
+  }
+
+  .info-small {
+    width: 100%;
+    flex-direction: column;
+    background-color: yellow;
+  }
+
+  .info-img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 2rem;
+  }
+
+  .info-content {
+    width: 100%;
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .program h3 {
+    font-size: 1.5rem;
+    margin: 1.5rem;
+  }
+
+  .info-detail {
+    margin-bottom: 1rem;
+  }
+
+  .read-more {
+    color: green;
+    font-size: 1.25rem;
+  }
+
+  .program-section {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .program {
+    width: 100%;
+    margin: 0.5rem 0rem;
+  }
+
+  .thesis {
+    align-items: center;
+  }
 }
