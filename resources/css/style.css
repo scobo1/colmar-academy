@@ -274,13 +274,18 @@ footer {
 
 /* Mobile version */
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 800px) {
   html {
     font-size: 16px;
   }
 
   .mobile {
     display: flex;
+  }
+
+  header {
+    display: block;
+    justify-content: center;
   }
 
   .desktop {
@@ -292,10 +297,10 @@ footer {
   }
 
   nav {
-    padding-right: 0rem;
-    background-color: yellow;
+    margin-top: 1rem;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+    padding-right: 0;
   }
 
   .banner.section {
